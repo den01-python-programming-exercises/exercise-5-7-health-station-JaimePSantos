@@ -1,11 +1,12 @@
 import pytest
 import os
 
+from src.health_station import HealthStation
+from src.person import Person
+
 def test_exercise():
     os.chdir('src')
 
-    from health_station import HealthStation
-    from person import Person
     station = HealthStation()
 
     james = Person("James", 1, 108, 8)
